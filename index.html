@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>RSA decrypt online</title>
+</head>
+<body>
+    <center class="d-flex m-3 justify-content-between">
+        <h2>RSA decrypt</h2>
+        <a href="https://rsa-encrypt.netlify.app" class="btn btn-danger">RSA encrypt</a>
+    </center>
+
+    <div class="container">
+
+        <div class="row bir">
+            <div class="col-2">
+                <p>Private keys:</p>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col">
+                        <input type="number" id="key1" placeholder="Key(1)">
+                    </div>
+                    <div class="col">
+                        <input type="number" id="key2" placeholder="Key(2)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bir">
+            <div class="col">
+                <!-- bootstrap button -->
+                <button type="button" class="btn btn-primary" id="ok">OK</button>
+            </div>
+        </div>
+
+
+        <!--  -->
+
+
+         <!-- start encrypt -->
+        <div id="box" class="mt-3">
+            <center>
+                <h3>Decrypt start</h3>
+            </center>
+           <div id="boxelement" class="mt-4">
+                <div class="row mt-2">
+                    <div class="col-4">
+                        <input type="text" class="form-control en" id="1e" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Soningiz" onkeyup="decrypt(this)">  
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" disabled value="decrypt=>">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control 1e" aria-label="Small" aria-describedby="inputGroup-sizing-sm" disabled>
+                    </div>
+                </div>
+           </div>
+           <center class="mt-3 mb-3">
+                 <button class="btn btn-primary" id="add">+</button>
+           </center>
+        </div>
+
+
+        <marquee behavior="alternate" direction="left"><a href="https://t.me/abdurakhmon_04">Abdurakhmon_04</a></marquee>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
